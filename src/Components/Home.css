@@ -1,0 +1,154 @@
+.background{
+  background-color: #001A33;
+}
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+     /* or any other height you prefer */
+    width: 200px;
+}
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* or any other margin you prefer */
+  }
+  
+  .button-group button {
+   padding: 10px; /* or any other margin you prefer */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* or any other height you prefer */
+  }
+  
+  .centered-div {
+    width: 200px; /* set the width to your desired value */
+  }
+
+  .d-4 {
+    padding: 0;
+    margin: 5px;
+    font-family: Inter;
+    font-size: 15px;
+    background-color: #002C55;
+    color: #fff;
+    height: 80px;
+    width: 150px;
+    --c:10px;  /* the cube perspective */
+    
+    --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+    
+    border-width:0 0 var(--c) var(--c) ;
+    
+    background-repeat:no-repeat;
+    background-origin:border-box;
+    transition:0.3s,background-color 0.3s 0.3s,color 0.3s 0.3s;
+    transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+    clip-path: 
+      polygon(var(--c) 0%, var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)));
+  }
+  .d-4:hover {
+    transition:0.3s 0.3s,background-color 0.3s,color 0.3s;
+    background-color:#002C55;
+    color:#fff;
+    transform:translate(0,0);
+    clip-path: 
+      polygon(0% var(--c), var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+      0% 100%,0% 100%);
+      cursor:pointer;
+  }
+ 
+  /* .social {
+    display: relative;
+
+    background: none;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 10px;
+  }
+  
+  .social:hover {
+    background: rgba(170, 170, 170, 0.062);
+    transition: 0.5s;
+  }
+  
+  .social svg {
+    color: #fff;
+  }
+   */
+
+   .social {
+     
+     padding: 2px;
+    font-size: 25px;
+    background-color: #002C55;
+    color: #fff;
+    height:60px;
+    width:60px;
+    --c:10px;  /* the cube perspective */
+    
+    --g:calc(var(--c)*0.707); /* 0.707 = cos(45deg) = sin(45deg) */
+    
+    border-width:0 0 var(--c) var(--c) ;
+    
+    background-repeat:no-repeat;
+    background-origin:border-box;
+    transition:0.3s,background-color 0.3s 0.3s,color 0.3s 0.3s;
+    transform:translate(calc(var(--c)/-1),calc(var(--c)/1));
+    clip-path: 
+      polygon(var(--c) 0%, var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)),100% calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)),
+      var(--c) calc(100% - var(--c)));
+  }
+  .social:hover {
+    transition:0.3s 0.3s,background-color 0.3s,color 0.3s;
+    
+    color:#fff;
+    transform:translate(0,0);
+    clip-path: 
+      polygon(0% var(--c), var(--c) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
+      0% 100%,0% 100%);
+      cursor:pointer;
+  }
+  .social a{
+    text-transform: none;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .fotica{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 40%;
+    border-radius: 70px;
+  }
+
+  .container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    position: relative;
+    height: 750px;
+    width: 1000px;
+    background-color: #002141;
+    border-radius: 50px;
+  }

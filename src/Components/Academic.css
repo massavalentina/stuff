@@ -1,0 +1,22 @@
+.background{
+    background-color: #001A33;
+  }
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    position: relative;
+    height: 750px;
+    width: 1000px;
+    background-color: #002141; 
+    border-radius: 50px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* or any other height you prefer */
+  }
